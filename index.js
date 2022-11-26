@@ -1,4 +1,20 @@
 alert("linked")
+var numDrum = document.querySelectorAll(".drum").length;
+
+for (var i = 0; i < numDrum; i++) {
+
+  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+
+    var buttonInnerHTML = this.innerHTML;
+
+     dudm(buttonInnerHTML);
+
+  });
+
+}
+
+
+
 document.addEventListener("keypress", function(event) {
 
   dudm(event.key);
